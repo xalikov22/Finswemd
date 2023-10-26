@@ -1,0 +1,49 @@
+footer {
+    background-color: $primary_color;
+    padding: 54px 80px 54px 80px;
+    position: sticky;
+    margin-top: 200px;
+}
+
+.footer__block {
+    @include for-phone {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        column-gap: 40px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text1 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            font-family: $nav_font_title;
+            max-width: 361px;
+            color: $white_color;
+            opacity: 70%;
+            @include for-phone {
+                width: 300px;
+            }
+        }
+        &__cards {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+        }
+    }
+}
+
+.logowrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-phone {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+}

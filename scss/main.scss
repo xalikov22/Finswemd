@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+@import "./all_block/fonts";
+@import "./all_block/mixin";
+@import "./all_block/veriables";
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@import "./all_block/header";
+@import "./all_block/middle";
+@import "./all_block/footer";
+@import"./register.scss";
+@import"./category.scss";
+@import"./postes.scss";
+hr {
+    width: 1340px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: $dark-gray;
+    margin-top: 66px;
+    opacity: 40%;
+    display: none;
+}
